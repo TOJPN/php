@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>ピザの注文</title>
+</head>
+<body>
+<form name="pform" method="post" action="p15flexyform.php">
+<p>生地の種類:
+<select name="pbase" id="pbase"></select>
+</p>
+<p>サイズ:<br>
+<input type="radio" name="psize" value="1">大
+<input type="radio" name="psize" value="2">中
+<input type="radio" name="psize" value="3">小
+</p>
+<p>トッピング:<br>
+<input type="checkbox" name="ptop[]" value="1">ぺパロニ
+<input type="checkbox" name="ptop[]" value="2">アンチョビ
+<input type="checkbox" name="ptop[]" value="3">トマト
+<input type="checkbox" name="ptop[]" value="4">ピーマン
+<input type="checkbox" name="ptop[]" value="5">バジル
+</p>
+<p>お名前:<br>
+<input name="kname" size="40" maxlength="30">
+</p>
+<p>連絡事項:<br>
+<textarea name="kcomm"></textarea>
+</p>
+<input type="submit" value="注文する">
+</form>
+</body>
+</html>

@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>ログイン</title>
+<style type="text/css">
+<!--
+body { font-family:Osaka,メイリオ,sans-serif;}
+h2 { border-left:12px solid #FF5500; border-bottom:2px solid #FF5500; padding-left:10px;}
+#content { margin:20px; }
+#msg { color: E61980; }
+input { width: 120px }
+th { text-align: left; }
+-->
+
+</style>
+</head>
+<body>
+<h2>ログインしてください</h2>
+<div id = "content">
+<form ma,e="loginform" method="post">
+<table>
+<tr><th>ユーザー名</th><td><input type="text" name="username" maxlength="20"></td></tr>
+<tr><th>パスワード</th><td><input type="password" maxlength="100"></td></tr>
+</table>
+<p><input type="submit" name="login" value="ログイン"></p>
+</form>
+<p id="msg">{errmsg:hs}</p>
+</div>
+</body>
+</html>
